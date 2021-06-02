@@ -4,12 +4,13 @@ body{
   */
 
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,100&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,100&display=swap");
 
   * {
     margin: 0;
     padding: 0;
     background-image: url(https://i.postimg.cc/dQZssk2d/1.jpg);
-    -webkit-background-size: cover;
+    background-size: cover;
     box-sizing: border-box;
   }
   
@@ -175,10 +176,8 @@ margin-bottom: 30px;
 }
 .wrapper h2 {
 font-size: 30px;
+margin: 30px 0 5px 0;
 }
-}
-    margin: 30px 0 5px 0;
-  }
   
   .flip-front .skills{
     border-top: 1px solid #c500d6;
@@ -225,5 +224,4 @@ font-size: 30px;
   }
   
   
-  
-  
+  } 
