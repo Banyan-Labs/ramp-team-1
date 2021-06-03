@@ -73,6 +73,28 @@ body {
     margin: 0 5px;
 }
 
+.hero-container {
+    background: var(--light-gray);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content-wrapper {
+    width: 65%;
+}
+
+.hero-heading {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.hero-slogan {
+    font-size: clamp(1.1rem, 2vw, 2.2rem);
+    margin-left: 24px;
+}
+
 .card {
     width: 30%;
     display: flex;
