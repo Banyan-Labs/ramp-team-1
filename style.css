@@ -1,6 +1,7 @@
 * { box-sizing: border-box; }
 
 body {
+    background-color: moccasin;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -74,28 +75,44 @@ body {
 }
 
 .card {
-    width: 30%;
+    width: 0%;
     display: flex;
     flex-direction: row-reverse;
-    border: 10px red solid;
+    border: auto red solid;
     direction: rtl;
-    height: 250px;
+    height: 1050px;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap; 
+    padding: 15px;
+    align-content: center;
+    align-self: center;
+    margin-left: 18%;
+    column-gap: 30px;
+    column-fill: auto;
     
+  
+  
 }
 
 .header {
     height: 30%;
-    background: red;
+    background: var(--black);
     color: white;
     text-align: center;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }
 
+
 .container {
-    padding: 1px 16px;
+    padding: 2px 16px;
     display: flex;
     flex-direction: row-reverse;
-    width: 450px;
-    height: 250px;
-    background-color: lightgrey;
-    direction: rtl;  
+    width: 300px;
+    height: 10px;
+    direction: rtl;
+    background: var(--slate-blue);
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    
 }
