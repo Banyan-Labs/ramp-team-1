@@ -74,6 +74,13 @@ body {
     margin: 0 5px;
 }
 
+.about-img{
+   margin:20px;
+   float:left;
+}
+
+
+
 .card {
     width: 0%;
     display: flex;
@@ -116,3 +123,4 @@ body {
     flex-wrap: nowrap;
     
 }
+
