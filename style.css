@@ -1,7 +1,6 @@
 * { box-sizing: border-box; }
 
 body {
-    background-color: moccasin;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -74,53 +73,78 @@ body {
     margin: 0 5px;
 }
 
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: right;
+    width: 200px;
+    padding: 0 20px;
+    position: relative;
+    right: 420px;
+    top: 10px;
+    
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 20px;
+    text-align: center;
+    background-color:  #849fb8; 
+    height: 200px;
+    position: relative;
+    right: 90px;
+    top: 10px;
+    width: 150px;
+  }
+
+   .card:not(:first-child) {
+    margin-left: -2rem;
+  }
+
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;    
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+
 .about-img{
    margin:20px;
    float:left;
 }
 
-
-
-.card {
-    width: 0%;
-    display: flex;
-    flex-direction: row-reverse;
-    border: auto red solid;
-    direction: rtl;
-    height: 1050px;
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap; 
-    padding: 15px;
-    align-content: center;
-    align-self: center;
-    margin-left: 18%;
-    column-gap: 30px;
-    column-fill: auto;
-    
-  
-  
+.about-us{
+    position: relative;
+    top: 50px;
 }
 
-.header {
-    height: 30%;
-    background: var(--black);
-    color: white;
-    text-align: center;
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+.footer {
+    display: block;
+    position: relative;
+    right: 500px;
+    top: 125px;
 }
-
-
-.container {
-    padding: 2px 16px;
-    display: flex;
-    flex-direction: row-reverse;
-    width: 300px;
-    height: 10px;
-    direction: rtl;
-    background: var(--slate-blue);
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    
-}
-
