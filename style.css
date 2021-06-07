@@ -148,3 +148,16 @@ body {
     right: 500px;
     top: 125px;
 }
+
+.about-img {
+    animation-name: floating;
+    animation-duration: 3.0s;
+    animation-iteration-count: infinite;
+  }
+
+   
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+} 
